@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Measures Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Statistical Measures Calculator</h1>
+
+        <div class="theory">
+            <h2>Theory</h2>
+            <h3>Mean:</h3>
+            <p>The mean (average) of a set of numbers is calculated by dividing the sum of all numbers by the total
+                count of numbers.</p>
+            <h3>Median:</h3>
+            <p>The median is the middle number in a sorted, ascending or descending, list of numbers.</p>
+            <h3>Mode:</h3>
+            <p>The mode is the number that appears most frequently in a data set.</p>
+        </div>
+
+        <form id="statsForm">
+            <label for="numbers">Enter numbers (comma-separated):</label>
+            <input type="text" id="numbers" name="numbers" required>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+            <h2>Results</h2>
+            <p><strong>Mean:</strong> <span id="meanResult"></span></p>
+            <p><strong>Median:</strong> <span id="medianResult"></span></p>
+            <p><strong>Mode:</strong> <span id="modeResult"></span></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
